@@ -1,7 +1,12 @@
 import React from 'react';
 import '../styles/components/Success.css';
+import { UseDataContext } from '../context/AppContext';
 
 const Success = () => {
+  const context = UseDataContext()
+  const {state } = context
+  const { cart, buyer } = state
+
   return (
     <div className="Succes">
       <div className="Success-content">
